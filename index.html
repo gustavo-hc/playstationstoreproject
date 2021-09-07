@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PR-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Playstation Store</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./img/logo.png" alt="Logo">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link">Console</a></li>
+                    <li class="nav-li"><a class="nav-link">Accessories</a></li>
+                    <li class="nav-li"><a class="nav-link">Controls</a></li>
+                    <li class="nav-li"><a class="nav-link">Others</a></li>
+                </ul>
+            </nav>
+            <img src="./img/menu.png" class="menu-icon" alt="menubutton" onclick="showMenu()">
+        </div>
+        <div class="row">
+            <div class="column1">
+                <h2>PS5 DualSense</h2>
+                <h3>Wireless Controler for PlayStation</h3>
+                <p>Midnight Black</p>
+                <h4>R$ 469,00</h4>
+                <button class="buy">Buy now <img src="./img/arrow.png" alt="arrow"></button>
+            </div>
+
+            <div class="column2">
+                <img class="controller" src="./img/controller.png" alt="Controller">
+                <div class="color-box"></div>
+                <button class="add-cart">
+                    <img src="./img/add.png" alt="Add to cart">
+                </button>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="./img/fb.png">
+            <img src="img/ig.png">
+            <img src="img/tw.png">
+        </div>
+
+
+
+    </div>
+</body>
+<script>
+    const menulist = document.getElementById("menu-list")
+    menulist.style.maxHeight = "0px"
+
+    function showMenu() {
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "120px"
+        } else {
+            menulist.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+
+</html>
